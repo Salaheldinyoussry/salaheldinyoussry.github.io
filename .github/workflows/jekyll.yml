@@ -1,9 +1,10 @@
-name: Deploy Jekyll site to Pages
+# .github/workflows/deploy.yml
+name: Deploy al-folio Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: ["main"]     # Trigger on push to main branch
+  workflow_dispatch:        # Allow manual trigger
 
 permissions:
   contents: read
@@ -17,25 +18,38 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      # 1. Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby (compatible with Jekyll + al-folio)
+      # 2. Setup Ruby (3.1.7) and Bundler cache
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.1.7
           bundler-cache: true
+          cache-version: 2
 
-      - name: Setup GitHub Pages
+      # 3. Update RubyGems and install Bundler compatible with al-folio
+      - name: Update RubyGems & Bundler
+        run: |
+          gem update --system
+          gem install bundler -v "~> 2.3"
+
+      # 4. Setup GitHub Pages
+      - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
+      # 5. Build Jekyll site
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
+      # 6. Upload _site as artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
