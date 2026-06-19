@@ -24,4 +24,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently completing my MSc in Computer Science at Saarland University, conducting research at the Max Planck Institute for Informatics. My work focuses on generative vision, controlled video and image synthesis, and multimodal learning. I am particularly interested in developing advanced AI systems that can generate realistic visual content while ensuring identity preservation and controllability across multiple modalities.
+I am currently a Doctoral Researcher at Télécom Paris, Institut Polytechnique de Paris. Previously, I was a master's thesis student at the Max Planck Institute for Informatics, supervised by [Prof. Dr. Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/). My work focuses on generative vision, controlled video, and image synthesis. I am particularly interested in developing physically plausible and realistic video and image models.
