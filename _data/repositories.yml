@@ -1,9 +1,9 @@
-github_users:
-  - salaheldinyoussry
+# github_users:
+#   - salaheldinyoussry
 
-repo_description_lines_max: 2
+# repo_description_lines_max: 2
 
-github_repos:
-  - radwaahmed20112000/Tourify-App 
-  -  salaheldinyoussry/BERT-Reviews-Classifier-NN
-  - salaheldinyoussry/react-sankey-chart
+# github_repos:
+#   - radwaahmed20112000/Tourify-App 
+#   -  salaheldinyoussry/BERT-Reviews-Classifier-NN
+#   - salaheldinyoussry/react-sankey-chart
