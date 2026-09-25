@@ -43,16 +43,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-started-my-phd-at-télécom-paris-institut-polytechnique-de-paris-tada",
+          title: 'Started my PhD at Télécom Paris, Institut Polytechnique de Paris! :tada:',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-paper-refree-s2v-the-outcome-of-my-master-s-thesis-at-mpi-informatics-has-been-accepted-to-neurips-2026-sparkles-project-page-arxiv",
+          title: 'Our paper ReFree-S2V, the outcome of my Master’s thesis at MPI Informatics, has...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
