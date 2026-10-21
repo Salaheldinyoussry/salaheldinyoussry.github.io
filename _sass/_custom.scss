@@ -90,6 +90,7 @@ ul.interests {
 
   td {
     padding-top: 0.55rem;
+    color: var(--global-text-color);
   }
 
   tr + tr {
@@ -302,5 +303,13 @@ ul.interests {
     &:hover {
       transform: none;
     }
+  }
+}
+
+// ---------- Phones: keep publication thumbnails compact ----------
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li .abbr {
+    max-width: 240px;
+    margin: 0 auto 0.75rem;
   }
 }
