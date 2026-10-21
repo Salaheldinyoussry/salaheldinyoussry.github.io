@@ -1,15 +1,12 @@
-cv:
 - title: General Information
   type: map
   contents:
     - name: Full Name
       value: "Salaheldin Mohamed"
-    - name: Phone
-      value: "+49-15256935354"
+    - name: Position
+      value: "Doctoral Researcher, Institut Polytechnique de Paris"
     - name: Email
       value: "salaheldin.y.mohamed@gmail.com"
-    - name: Website
-      value: "http://salaheldinyoussry.github.io"
     - name: GitHub
       value: "https://github.com/Salaheldinyoussry"
     - name: LinkedIn
@@ -18,148 +15,150 @@ cv:
 - title: Education
   type: time_table
   contents:
-    - title: "MSc Computer Science"
-      institution: "Saarland University, Saarbrücken, Germany"
-      year: "2023-2025"
-    - title: "BSc in Computer and Systems Engineering"
-      institution: "Alexandria University, Alexandria, Egypt"
-      year: "2018-2023"
+    - title: "Ph.D. in Computer Science"
+      institution: "Institut Polytechnique de Paris"
+      location: "Paris, France"
+      year: "2026 – 2029"
       description:
-        - "CGPA: 3.5 / 4.0"
+        - "Focus: Physically plausible and realistic video and image models."
+    - title: "M.Sc. in Computer Science"
+      institution: "Saarland University"
+      location: "Saarbrücken, Germany"
+      year: "2023 – 2026"
+      description:
+        - "Focus: Computer vision, machine learning, and advanced deep learning architectures."
+        - "Master's thesis at the Max Planck Institute for Informatics (ReFree-S2V, NeurIPS 2026)."
+    - title: "B.Sc. in Computer and Systems Engineering"
+      institution: "Alexandria University"
+      location: "Alexandria, Egypt"
+      year: "2018 – 2023"
+      description:
+        - "Bachelor thesis: Masked Controlled Image Generation (Supervisor: Prof. Dr. Ayman Khalafallah)."
 
-- title: Publications
+- title: Publications & Preprints
   type: time_table
   contents:
+    - title: "ReFree-S2V: Towards Realistic Co-Speech Video Generation via Reward-Free RL and Multilevel Speech Guidance"
+      institution: "NeurIPS 2026"
+      year: "2026"
+      description:
+        - "<b>Mohamed, S.</b>, Mughal, M. H., Dabral, R., Theobalt, C."
+        - "A reward-free RL framework combined with multi-level speech representations to generate temporally consistent, high-fidelity talking-portrait videos. <a href=\"https://salaheldinyoussry.github.io/ReFree-S2V/\">Project page</a> · <a href=\"https://arxiv.org/abs/2606.13304\">arXiv</a>"
     - title: "Gaussian Windows for Multi-Focal Attention"
-      institution: "In preparation for CVPR 2026"
+      institution: "Under review"
       description:
-        - "Authors: Mohamed, S.; Muhammad Hamza, M.; Dabral, R.; Theobalt, C."
-    - title: "Fusion is all you need: Face Fusion for Customized Identity-Preserving Image Synthesis"
-      year: "2024"
-      description:
-        - "Arxiv: https://arxiv.org/abs/2409.19111"
+        - "<b>Mohamed, S.</b>, Mughal, M. H., Dabral, R., Theobalt, C."
+        - "A Gaussian window mechanism that lets attention capture multi-focal structure in the data, beyond the locality imposed by positional encoding."
     - title: "Diffusion-based Identity-Preserving Facial Privacy Protection"
-      year: "ICASSP 2025"
+      institution: "ICASSP 2025"
+      year: "2025"
       description:
-        - "Authors: Han, D.*; Mohamed, S.*; Li, Y; Denzler, J."
-        - "Link: https://ieeexplore.ieee.org/abstract/document/10890829"
-    - title: "ShieldDiff: Suppressing Sexual Content Generation from Diffusion Models through RL"
+        - "Han, D.*, <b>Mohamed, S.*</b>, Li, Y., Denzler, J. (*equal contribution)"
+        - "A latent diffusion obfuscation pipeline that preserves facial expressions and fine details while preventing automated identity matching. <a href=\"https://ieeexplore.ieee.org/abstract/document/10890829\">Paper</a>"
+    - title: "Fusion is all you need: Face Fusion for Customized Identity-Preserving Image Synthesis"
+      institution: "arXiv preprint"
       year: "2024"
       description:
-        - "Preprint: https://doi.org/10.20944/preprints202407.0330.v1"
+        - "<b>Mohamed, S.</b>, Han, D., Li, Y."
+        - "Identity-preserving conditioning via cross-attention feature injection for zero-shot personalized generation. <a href=\"https://arxiv.org/abs/2409.19111\">arXiv</a>"
+    - title: "ShieldDiff: Suppressing Sexual Content Generation from Diffusion Models through Reinforcement Learning"
+      institution: "Preprint"
+      year: "2024"
+      description:
+        - "Han, D.*, <b>Mohamed, S.*</b>, Li, Y. (*equal contribution)"
+        - "RL-guided fine-tuning that unlearns harmful concepts without degrading benign generation. <a href=\"https://arxiv.org/abs/2410.05309\">arXiv</a>"
     - title: "TCIG: Two-Stage Controlled Image Generation with Quality Enhancement through Diffusion"
+      institution: "arXiv preprint"
       year: "2024"
       description:
-        - "Preprint: https://arxiv.org/abs/2403.01212"
+        - "<b>Mohamed, S.</b>"
+        - "A two-stage generative model combining pose/layout conditioning with progressive latent diffusion refinement. <a href=\"https://arxiv.org/abs/2403.01212\">arXiv</a>"
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: "Master Thesis"
-      institution: "Max-Planck-Institut für Informatik, Saarbrücken, Germany"
-      year: "Jan 2025 - Present"
+    - title: "Master Thesis Researcher"
+      institution: "Max Planck Institute for Informatics"
+      location: "Saarbrücken, Germany"
+      year: "2025 – 2026"
       description:
-        - "Topic: Video Generation for Humans"
-        - "Supervisor: Dr. Rishabh Dabral"
+        - "Advisors: Prof. Christian Theobalt, Dr. Rishabh Dabral (Jan 2025 – Feb 2026)."
+        - "Researched generative diffusion models for human video dynamics."
+        - "Developed a reward-free reinforcement learning framework aligning video diffusion with multi-modal acoustic features."
+        - "Scaled training across GPU clusters with PyTorch DDP and DeepSpeed."
     - title: "Research Intern"
-      institution: "Huawei, Munich Research Center, Düsseldorf, Germany"
-      year: "May 2024 - Oct 2024"
+      institution: "Huawei Munich Research Center"
+      location: "Düsseldorf, Germany"
+      year: "2024"
       description:
-        - "Developed diffusion-based content filtering system achieving SOTA results."
-        - "Built facial privacy protection framework with identity preservation."
-        - "Developed custom identity-preserving synthesis pipeline using diffusion models."
-        - "Skills: Diffusion Models, Generative AI, Computer Vision, Privacy Protection, Deep Learning."
-    - title: "Part-time Software / Machine Learning Engineer"
-      institution: "Kapitalwise, New York, USA (Remote)"
-      year: "Jul 2021 - Oct 2023"
+        - "May 2024 – Oct 2024."
+        - "Researched safety alignment for text-to-image models, leading to ShieldDiff (RL-based concept suppression)."
+        - "Developed an identity-preserving anonymization pipeline with conditional latent diffusion, published at ICASSP 2025."
+        - "Designed zero-shot face fusion architectures for personalized image synthesis, surpassing baselines in identity fidelity."
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: "Part-time Machine Learning Engineer"
+      institution: "Kapitalwise"
+      location: "New York, USA (Remote)"
+      year: "2021 – 2023"
       description:
-        - "Fine-tuned LLaMA for domain-specific financial data."
-        - "Implemented NLP model for life-event extraction from credit card transactions."
-        - "Built AI system analyzing webpages for widget recommendations."
-        - "Designed ML-based cross-domain user tracking."
-        - "Created high-performance caching service."
-        - "Built JavaScript event-tracking analytics script."
-        - "Skills: LLMs, NLP, ML, JS, Caching, React, Node.js, Python, Redis, RabbitMQ, MongoDB, AWS."
+        - "Jul 2021 – Oct 2023."
+        - "Fine-tuned open-source LLMs (LLaMA-2) with LoRA on custom financial instruction datasets."
+        - "Built NLP sequence-classification pipelines to detect user life-stage events from transaction metadata."
+        - "Designed high-concurrency caching infrastructure with Redis and RabbitMQ for sub-100 ms inference."
     - title: "Software Engineer Intern"
-      institution: "Siemens, Cairo, Egypt"
-      year: "Aug 2022 - Sep 2022"
+      institution: "Siemens"
+      location: "Cairo, Egypt"
+      year: "2022"
       description:
-        - "Researched and benchmarked C++ reflection methods."
-        - "Implemented C++ library: Reflection API, binary/JSON serialization, process snapshotting, dynamic GUI generation."
-    - title: "Machine Learning Intern"
-      institution: "Evolv Fit, New Delhi, India (Remote)"
-      year: "Jun 2021 - Aug 2021"
+        - "Aug 2022 – Sep 2022."
+        - "Implemented C++ reflection, dynamic JSON/binary serialization, and runtime GUI generation."
+    - title: "Machine Learning & Software Engineering Intern"
+      institution: "Evolv Fit & Master Micro"
+      location: "Remote / Cairo, Egypt"
+      year: "2021"
       description:
-        - "Built system detecting 15 training exercises and hand gesture recognition."
-        - "Created workout recommendation system using ML + linear programming."
-    - title: "Software Engineer Intern"
-      institution: "Master Micro, Cairo, Egypt"
-      year: "Jul 2021 - Aug 2021"
-      description:
-        - "Implemented optimized plotting engine for 1M+ point datasets."
-        - "Skills: C/C++, Python."
+        - "Jun 2021 – Sep 2021."
+        - "Built real-time pose estimation and hand-gesture tracking with OpenCV and MediaPipe for automated workout logging."
+        - "Optimized a C++ plotting engine for 1M+ point arrays, reducing latency from 60 s to under 1 s."
 
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: "Programming Languages"
+    - title: "Generative Modeling & Vision"
       items:
-        - "Python, Java, C/C++, JavaScript (Node.js, TypeScript), SQL"
-    - title: "Machine Learning & Deep Learning"
+        - "Latent Diffusion Models, ControlNet, GANs, Transformers"
+    - title: "Machine Learning & Alignment"
       items:
-        - "PyTorch, TensorFlow, Keras, Transformers, DeepSpeed, Accelerate, scikit-learn"
-    - title: "NLP & Generative Models"
+        - "Preference optimization (DPO, SDPO), Reinforcement Learning (GRPO), Reward Modeling, Concept Unlearning, LoRA/PEFT, LLM Fine-Tuning"
+    - title: "Frameworks & Libraries"
       items:
-        - "LLaMA, Diffusion Models, Transformers, RL, Prompt Engineering"
-    - title: "Web & Backend"
+        - "PyTorch, HuggingFace (Diffusers, Transformers), DeepSpeed, Accelerate, OpenCV, TensorFlow, scikit-learn, JAX (basic)"
+    - title: "Distributed Computing & Infrastructure"
       items:
-        - "React.js, React Native, Vue.js, Express.js, Spring Boot, Sails.js, Redux"
-    - title: "Big Data & Distributed Systems"
-      items:
-        - "Hadoop, Spark, Kafka, RabbitMQ"
-    - title: "DevOps & Tools"
-      items:
-        - "Docker, Git, GitHub, AWS, Redis, MongoDB, Linux, JWT"
-    - title: "Quantum Computing"
-      items:
-        - "Qiskit"
-    - title: "Hardware & Embedded"
-      items:
-        - "Arduino, PCB Design"
+        - "CUDA, Distributed Data Parallel (DDP), Slurm, Docker, AWS (EC2, S3, ECS), Git, Linux, LaTeX"
+
+- title: Selected Open-Source Implementations
+  type: time_table
+  contents:
+    - title: "PyTorch D3PM (Discrete Diffusion Probabilistic Models)"
+      year: "2024"
+      description:
+        - "Clean-room PyTorch re-implementation of Google's D3PM with discrete Markov transition matrices for categorical latent spaces."
+    - title: "Attention-Based Skin Cancer Classification"
+      year: "2023"
+      description:
+        - "Multi-scale spatial attention models on HAM10000, reaching 94% classification accuracy."
+    - title: "Health Monitor: Distributed Big Data Log Engine"
+      year: "2022"
+      description:
+        - "Real-time log ingestion and batch analysis with Hadoop HDFS, MapReduce, and Apache Spark."
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: "2021"
       items:
-        - "16th place out of 72 teams – ICPC Alexandria Collegiate Programming Contest"
-        - "Quantum Computing Training – QWorld (Certificate)"
-
-- title: Personal Projects
-  type: time_table
-  contents:
-    - title: "Pytorch Implementation of D3PM"
-      year: ""
-      description:
-        - "Implemented PyTorch version of Google Research’s D3PM."
-        - "Technology: Python, PyTorch."
-    - title: "Skin Cancer Detection"
-      description:
-        - "Attention-based models achieving 94% accuracy on HAM10000."
-        - "Technology: Python, PyTorch, TensorFlow."
-    - title: "react-sankey-chart"
-      description:
-        - "React library for interactive Sankey diagrams."
-        - "Technology: React.js, JavaScript."
-    - title: "Health Monitor System"
-      description:
-        - "Big-data analytics system using Hadoop, MapReduce, and Spark."
-    - title: "Tourify (Travel App)"
-      description:
-        - "Social travel app for posts, reviews, and location-based stories."
-        - "Technology: Android, Java, Firebase, React Native."
-
-- title: Other Interests
-  type: list
-  contents:
-    - "<u>Hobbies:</u> AI research, software engineering, open-source development, fitness"
+        - "16th place out of 72 teams, ICPC Alexandria Collegiate Programming Contest"

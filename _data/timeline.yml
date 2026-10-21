@@ -1,0 +1,46 @@
+# Shown on the home page (newest first). type: education | research | industry
+- date: "2026 – present"
+  title: "Ph.D. in Computer Science"
+  org: "Institut Polytechnique de Paris"
+  location: "Paris, France"
+  type: education
+  current: true
+  note: "Physically plausible and realistic video and image models."
+
+- date: "Jan 2025 – Feb 2026"
+  title: "Master Thesis Researcher"
+  org: "Max Planck Institute for Informatics"
+  location: "Saarbrücken, Germany"
+  type: research
+  note: "Human video generation with Prof. Christian Theobalt and Dr. Rishabh Dabral → ReFree-S2V (NeurIPS 2026)."
+
+- date: "May 2024 – Oct 2024"
+  title: "Research Intern"
+  org: "Huawei Munich Research Center"
+  location: "Düsseldorf, Germany"
+  type: research
+  note: "Safe and identity-preserving diffusion models → ShieldDiff, Face Fusion, ICASSP 2025."
+
+- date: "2023 – 2026"
+  title: "M.Sc. in Computer Science"
+  org: "Saarland University"
+  location: "Saarbrücken, Germany"
+  type: education
+
+- date: "Aug 2022 – Sep 2022"
+  title: "Software Engineer Intern"
+  org: "Siemens"
+  location: "Cairo, Egypt"
+  type: industry
+
+- date: "Jul 2021 – Oct 2023"
+  title: "Part-time Machine Learning Engineer"
+  org: "Kapitalwise"
+  location: "New York, USA (Remote)"
+  type: industry
+
+- date: "2018 – 2023"
+  title: "B.Sc. in Computer and Systems Engineering"
+  org: "Alexandria University"
+  location: "Alexandria, Egypt"
+  type: education

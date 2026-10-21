@@ -1,0 +1,306 @@
+/*******************************************************************************
+ * Custom styles (loaded last, overrides the al-folio defaults)
+ ******************************************************************************/
+
+:root {
+  --global-theme-color: #6c3483;
+  --global-hover-color: #8e44ad;
+  --tl-education: #2e86c1;
+  --tl-research: #6c3483;
+  --tl-industry: #d68910;
+  --soft-bg: rgba(108, 52, 131, 0.05);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #c39bd3;
+  --global-hover-color: #d7bde2;
+  --tl-education: #5dade2;
+  --tl-research: #c39bd3;
+  --tl-industry: #f5b041;
+  --soft-bg: rgba(195, 155, 211, 0.07);
+}
+
+body {
+  font-family: "Inter", "Roboto", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+// ---------- Headings ----------
+.post-title {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+}
+
+.post article > h2,
+.post article h2.section {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  a:hover {
+    color: var(--global-theme-color) !important;
+    text-decoration: none;
+  }
+}
+
+// ---------- Profile ----------
+.profile img {
+  border-radius: 14px !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12) !important;
+}
+
+// ---------- Research interest chips ----------
+ul.interests {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+
+  li {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    color: var(--global-theme-color);
+    background: var(--soft-bg);
+    border: 1px solid rgba(108, 52, 131, 0.18);
+  }
+}
+
+// ---------- News ----------
+.news table {
+  th {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    padding-top: 0.6rem;
+  }
+
+  td {
+    padding-top: 0.55rem;
+  }
+
+  tr + tr {
+    border-top: 1px dashed var(--global-divider-color);
+  }
+}
+
+// ---------- Publications ----------
+.publications ol.bibliography li {
+  padding: 1rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background: var(--soft-bg);
+  }
+
+  .preview {
+    border-radius: 8px !important;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 1.02rem;
+    line-height: 1.4;
+    margin-bottom: 0.2rem;
+  }
+
+  .abbr abbr {
+    border-radius: 6px !important;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  .links .btn {
+    border-radius: 999px;
+    border: 1px solid var(--global-theme-color) !important;
+    color: var(--global-theme-color) !important;
+    padding: 0.15rem 0.8rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    &:hover {
+      background: var(--global-theme-color) !important;
+      color: var(--global-card-bg-color) !important;
+    }
+  }
+}
+
+// ---------- Timeline ----------
+.timeline {
+  position: relative;
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.6rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.45rem;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    width: 2px;
+    background: var(--global-divider-color);
+  }
+
+  .tl-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    margin: 0 0 1rem -1.6rem;
+
+    span::before {
+      content: "";
+      display: inline-block;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+      background: var(--dot);
+    }
+  }
+
+  .tl-item {
+    position: relative;
+    padding: 0 0 1.25rem 0.5rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1.6rem;
+      top: 0.35rem;
+      width: 0.95rem;
+      height: 0.95rem;
+      border-radius: 50%;
+      background: var(--global-bg-color);
+      border: 3px solid var(--dot);
+    }
+
+    &.current::before {
+      background: var(--dot);
+      box-shadow: 0 0 0 4px rgba(108, 52, 131, 0.15);
+    }
+  }
+
+  .tl-date {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--dot);
+    text-transform: uppercase;
+  }
+
+  .tl-title {
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .tl-org {
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+  }
+
+  .tl-note {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.15rem;
+  }
+
+  .education {
+    --dot: var(--tl-education);
+  }
+  .research {
+    --dot: var(--tl-research);
+  }
+  .industry {
+    --dot: var(--tl-industry);
+  }
+}
+
+// ---------- Venue badge: above the thumbnail, with shimmer + hover lift ----------
+@keyframes venue-shimmer {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  55%,
+  100% {
+    transform: translateX(260%) skewX(-20deg);
+  }
+}
+
+.publications ol.bibliography li .abbr abbr.badge {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 0.55rem !important;
+  padding: 0.38rem 0.5rem;
+  border-radius: 8px !important;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+    transform: translateX(-120%) skewX(-20deg);
+    animation: venue-shimmer 4.5s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  & a,
+  & div {
+    position: relative;
+    z-index: 1;
+    color: #fff !important;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 8px 20px rgba(108, 52, 131, 0.35),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publications ol.bibliography li .abbr abbr.badge {
+    transition: none;
+
+    &::after {
+      animation: none;
+      display: none;
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

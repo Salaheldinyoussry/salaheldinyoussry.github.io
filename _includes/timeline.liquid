@@ -1,0 +1,19 @@
+<div class="timeline">
+  <div class="tl-legend">
+    <span class="education">Education</span>
+    <span class="research">Research</span>
+    <span class="industry">Industry</span>
+  </div>
+  {% for item in site.data.timeline %}
+    <div class="tl-item {{ item.type }}{% if item.current %} current{% endif %}">
+      <div class="tl-date">{{ item.date }}</div>
+      <div class="tl-title">{{ item.title }}</div>
+      <div class="tl-org">
+        {{ item.org }}{% if item.location %} · {{ item.location }}{% endif %}
+      </div>
+      {% if item.note %}
+        <div class="tl-note">{{ item.note }}</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

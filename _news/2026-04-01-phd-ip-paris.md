@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my PhD at [Télécom Paris, Institut Polytechnique de Paris](https://www.ip-paris.fr/)! :tada:
+Started my PhD at [Institut Polytechnique de Paris (IP Paris)](https://www.ip-paris.fr/)! :tada:

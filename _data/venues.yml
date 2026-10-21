@@ -8,6 +8,10 @@
 "Vision":
   color: "#009f36"
 
-"NeurIPS":
+"NeurIPS 2026":
   url: https://neurips.cc/
   color: "#6c3483"
+
+"ICASSP 2025":
+  url: https://2025.ieeeicassp.org/
+  color: "#1f5f9e"
