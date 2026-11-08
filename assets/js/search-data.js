@@ -23,12 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-joined-huawei-munich-research-center-as-a-research-intern",
+        },{id: "news-joined-huawei-munich-research-center-as-a-research-intern",
           title: 'Joined Huawei Munich Research Center as a research intern.',
           description: "",
           section: "News",},{id: "news-started-my-phd-at-institut-polytechnique-de-paris-ip-paris-tada",
