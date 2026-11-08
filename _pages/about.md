@@ -36,5 +36,3 @@ I am a Doctoral Researcher at [Institut Polytechnique de Paris (IP Paris)](https
 {: .interests}
 
 Previously, I did my M.Sc. in Computer Science at Saarland University and wrote my master's thesis at the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/), advised by [Prof. Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/) and [Dr. Rishabh Dabral](https://rishabhdabral.github.io/). Before that, I was a research intern at Huawei's Munich Research Center, working on safe and identity-preserving diffusion models. I received my B.Sc. in Computer and Systems Engineering from Alexandria University.
-
-**I am looking for research internships and visiting positions for 2027.** Feel free to [reach out](mailto:salaheldin.y.mohamed@gmail.com).

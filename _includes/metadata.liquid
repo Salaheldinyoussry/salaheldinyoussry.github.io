@@ -221,6 +221,7 @@
       {% when 'zotero_username' %}
         {% capture link %}https://www.zotero.org/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
+      {% when 'cv_pdf' %}
       {% else %}
         {% assign sameaslinks = sameaslinks | push: social[1].url %}
     {% endcase %}
